@@ -39,13 +39,6 @@ class CardForm extends React.Component {
             syncTime: syncTime
         })
 
-        this.setState({
-            repository: '',
-            command: '',
-            branch: '',
-            syncTime: 1
-        })
-
     }
 
     changeInputHandler = event => {

@@ -1,16 +1,9 @@
 import {ReactComponent as SettingsIcon} from '../files/settings.svg';
 import {ReactComponent as ToolIcon} from '../files/tool.svg';
 import {Link} from "react-router-dom";
-import React, {useEffect } from 'react';
-// import {connect} from "react-redux";
-import { useDispatch } from 'react-redux';
+import React  from 'react';
 
 function MainPage() {
-    const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch({type: "CLEAR_DATA"})
-    }, [dispatch])
-
     return (
         <div className="page">
             <div className="container">
@@ -18,10 +11,12 @@ function MainPage() {
                     <nav className="nav">
                         <h1>School CI server</h1>
 
-                        <button className="btn-grey">
-                            <SettingsIcon className="settingsIcon"/>
-                            Settings
-                        </button>
+                        <Link to="/clear">
+                            <button className="btn-grey">
+                                <SettingsIcon className="settingsIcon"/>
+                                Settings
+                            </button>
+                        </Link>
                     </nav>
                 </header>
 

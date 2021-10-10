@@ -1,9 +1,10 @@
-import React from "react";
-// import {ReactComponent as SettingsIcon} from "../files/settings.svg";
+import React  from 'react';
 
 import CardForm from "./CardForm";
-// import {Link} from "react-router-dom";
 import Cards from "./Cards";
+import {ReactComponent as SettingsIcon} from "../files/settings.svg";
+import {Link} from "react-router-dom";
+
 
 function SettingsPage({syncData, repository}) {
 
@@ -13,6 +14,11 @@ function SettingsPage({syncData, repository}) {
                 <header className="header">
                     <nav className="nav">
                         <h1>School CI server</h1>
+                        <Link to="/clear">
+                            <button className="btn-grey">
+                                <SettingsIcon className="settingsIcon"/>
+                            </button>
+                        </Link>
                     </nav>
                 </header>
 

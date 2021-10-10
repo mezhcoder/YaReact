@@ -14,6 +14,7 @@ import './css/SettingsForm.css'
 
 import {connect} from 'react-redux'
 import Repository from "./backend/Repository";
+import ComponentClear from "./components/ComponentClear";
 
 
 
@@ -24,11 +25,16 @@ const App = ({syncData}) => {
       <Router>
         <div>
           <Switch>
-            <Route path="/settings" app={this}>
-              <SettingsPage syncData={syncData} isViewForm={true} repository={repository}/>
+            <Route path="/clear" app={this} component={<SettingsPage syncData={syncData} repository={repository}/>}>
+              <ComponentClear/>
             </Route>
+
+            <Route path="/settings" app={this}>
+              <SettingsPage syncData={syncData} repository={repository}/>
+            </Route>
+
             <Route path="/" app={this}>
-              <MainPage/>
+              {isEmptySyncData(syncData) ? <MainPage/> : <SettingsPage syncData={syncData} repository={repository}/>}
             </Route>
           </Switch>
         </div>
@@ -40,6 +46,10 @@ const mapStateToProps = state => {
   return {
     syncData: state.data.data
   }
+}
+
+function isEmptySyncData(syncData) {
+  return !(syncData.repository.trim() && syncData.command.trim() && syncData.branch.trim());
 }
 
 
