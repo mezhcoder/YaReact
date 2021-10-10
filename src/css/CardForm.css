@@ -1,0 +1,12 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-label {
+    margin-bottom: 6px;
+}
+
+.field input {
+    margin-bottom: 18px;
+}
