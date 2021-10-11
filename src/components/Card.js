@@ -38,7 +38,7 @@ function renderTitleStatus(status, number, commit) {
         <div className="title-number-card" style={{color: getColorStatus(status)}}>
             #{number}
         </div>
-        <>{commit}</>
+        <div className="title-card-title">{commit}</div>
     </div>);
 }
 
@@ -64,13 +64,42 @@ function Card({card}) {
         <div className="card">
 
             <div className="card-commit">
-                {renderIconStatus(card.status)}
+
+                <div className="card-status-icon">
+                    {renderIconStatus(card.status)}
+                </div>
+
+
+
                 <div className="card-commit-info">
                     <div className="card-title">
                         {renderTitleStatus(card.status, card.number, card.commit)}
                     </div>
 
-                    <BranchIcon/> {card.branch} {card.branch_hex} <UserIcon/> {card.author}
+                    <div className="card-commit-wrapper">
+                        <div className="card-branch">
+                            <div className="branch-icon">
+                                <BranchIcon/>
+                            </div>
+                            <div className="branch-name">
+                                {card.branch}
+                            </div>
+                            <div className="branch-hex">
+                                {card.branch_hex}
+                            </div>
+                        </div>
+
+                        <div className="card-author">
+                            <div className="author-icon">
+                                <UserIcon/>
+                            </div>
+
+                            <div className="author-name">
+                                {card.author}
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

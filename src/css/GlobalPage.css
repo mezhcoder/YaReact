@@ -1,3 +1,9 @@
+@font-face {font-family: "YS Text Regular"; src: url("//db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.eot"); src: url("//db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.woff") format("woff"), url("//db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/23a02e8af5ef33a9b496dd524401550f.svg#YS Text Regular") format("svg"); }
+
+* {
+    font-family: 'YS Text Regular', serif;
+}
+
 body {
     padding: 0;
     margin: 0;

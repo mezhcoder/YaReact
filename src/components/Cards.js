@@ -4,10 +4,12 @@ import Card from "./Card";
 import {Link} from "react-router-dom";
 import {ReactComponent as SettingsIcon} from "../files/settings.svg";
 
+import '../css/Cards.css'
+
 function renderSettingsButton() {
     return (
         <Link to="/clear">
-            <button className="btn-grey">
+            <button className="btn-grey btn-grey-single">
                 <SettingsIcon className="settingsIcon"/>
             </button>
         </Link>

@@ -11,6 +11,10 @@
     margin-bottom: 8px;
 }
 
+.card-status-icon {
+    margin-right: 10px;
+}
+
 .card-commit {
     display: flex;
     margin-left: 25px;
@@ -26,6 +30,10 @@
     margin-right: 4px;
 }
 
+.title-card-title {
+    margin-top: 1px;
+}
+
 .card-date {
     display: flex;
     flex-direction: column;
@@ -38,4 +46,40 @@
 
 .card-title {
     margin-bottom: 12px;
+}
+
+.card-branch {
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px;
+}
+
+.branch-icon {
+    margin-right: 4px;
+}
+
+.branch-name {
+    margin-right: 4px;
+    padding-bottom: 4px;
+}
+
+.branch-hex {
+    padding-bottom: 4px;
+}
+
+.card-author {
+    display: flex;
+}
+
+.card-commit-wrapper {
+    display: flex;
+}
+
+.author-icon {
+    margin-right: 6px;
+}
+
+.author-name {
+    margin-top: -1.5px;
 }

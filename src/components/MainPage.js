@@ -2,10 +2,12 @@ import {ReactComponent as SettingsIcon} from '../files/settings.svg';
 import {ReactComponent as ToolIcon} from '../files/tool.svg';
 import {Link} from "react-router-dom";
 import React  from 'react';
+import '../css/MainPage.css'
 
 function MainPage() {
     return (
         <div className="page">
+
             <div className="container">
                 <header className="header">
                     <nav className="nav">
@@ -14,11 +16,12 @@ function MainPage() {
                         <Link to="/clear">
                             <button className="btn-grey">
                                 <SettingsIcon className="settingsIcon"/>
-                                Settings
+                                <span className="settingsIconText">Settings</span>
                             </button>
                         </Link>
                     </nav>
                 </header>
+
 
                 <main className="main zeroingParagraph" style={{justifyContent: "center"}}>
                     <div className="wrapper">
@@ -38,7 +41,7 @@ function MainPage() {
                     <li><a href="/#" rel="noreferrer">Русская версия</a></li>
                 </ul>
 
-                <p style={{color: "#7F8285"}}>&#169; 2020 <a href="https://t.me/zhcoder" target="_blank" rel="noreferrer">Nikita Zhidenko</a></p>
+                <p className="footer-author" style={{color: "#7F8285"}}>&#169; 2020 <a href="https://t.me/zhcoder" target="_blank" rel="noreferrer">Nikita Zhidenko</a></p>
             </footer>
         </div>
     );

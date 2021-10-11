@@ -5,3 +5,33 @@
 .mb22 {
     margin-bottom: 22px;
 }
+
+.header {
+    width: 100%;
+}
+
+
+@media (max-width: 500px) {
+    * {
+        font-size: 13px;
+    }
+
+
+    .settingsIconText {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer ul {
+        padding: 12px 0 0 16px;
+        margin: 0;
+    }
+
+    .footer .footer-author {
+        padding-left: 12px;
+    }
+}

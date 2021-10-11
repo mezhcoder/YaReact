@@ -8,7 +8,7 @@ import '../css/SettingsPage.css'
 
 function renderHeader() {
     return (<header className="header">
-        <nav className="nav">
+        <nav className="nav" style={{justifyContent: "space-between"}}>
             <h1>School CI server</h1>
         </nav>
     </header>);
@@ -17,9 +17,9 @@ function renderHeader() {
 function SettingsPage({syncData, repository}) {
     return (
         <div className="page">
+
             <div className="container">
                 {isEmptySyncData(syncData) ? renderHeader() : '' }
-
                 <main>
                     { isEmptySyncData(syncData) ? <CardForm repository={repository}/> : <Cards syncData={syncData} repository={repository}/> }
                 </main>
@@ -32,7 +32,7 @@ function SettingsPage({syncData, repository}) {
                     <li><a href="/#" rel="noreferrer">Русская версия</a></li>
                 </ul>
 
-                <p style={{color: "#7F8285"}}>&#169; 2020 <a href="https://t.me/zhcoder" target="_blank" rel="noreferrer">Nikita Zhidenko</a></p>
+                <p className="footer-author" style={{color: "#7F8285"}}>&#169; 2020 <a href="https://t.me/zhcoder" target="_blank" rel="noreferrer">Nikita Zhidenko</a></p>
             </footer>
         </div>
     );
