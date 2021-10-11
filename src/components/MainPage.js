@@ -38,7 +38,7 @@ function MainPage() {
                     <li><a href="/#" rel="noreferrer">Русская версия</a></li>
                 </ul>
 
-                <p>&#169; 2020 <a href="https://t.me/zhcoder" target="_blank" rel="noreferrer">Nikita Zhidenko</a></p>
+                <p style={{color: "#7F8285"}}>&#169; 2020 <a href="https://t.me/zhcoder" target="_blank" rel="noreferrer">Nikita Zhidenko</a></p>
             </footer>
         </div>
     );

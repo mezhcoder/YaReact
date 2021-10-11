@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-grow: 1;
     flex-flow: column nowrap;
-    border: 1px solid red;
 
     width: 1200px;
 }
@@ -124,4 +123,28 @@ h1 {
     outline: none;
     cursor: pointer;
     background-color: #FFCC00;
+}
+
+.btn-gold:hover {
+    background: #F2C200;
+}
+
+.btn-gold:focus {
+    border: 2px solid #B38F00;
+}
+
+.btn-gold:disabled {
+    background: #F2F2F2;
+}
+
+.btn-grey:hover {
+    background: #DBDBDB;
+}
+
+.btn-grey:focus {
+    border: 2px solid #B3B3B3;
+}
+
+.btn-grey:disabled {
+    background: #F2F2F2;
 }

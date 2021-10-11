@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0 0 1px rgba(67, 68, 69, 0.3), 0 1px 1px rgba(67, 68, 69, 0.3);
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+
+    padding: 12px 0;
+    margin-bottom: 8px;
+}
+
+.card-commit {
+    display: flex;
+    margin-left: 25px;
+}
+
+.title-card {
+    display: flex;
+}
+
+.title-number-card {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.card-date {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.card-date-wrapper {
+    margin-bottom: 12px;
+}
+
+.card-title {
+    margin-bottom: 12px;
+}

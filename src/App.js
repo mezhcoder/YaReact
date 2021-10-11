@@ -10,7 +10,6 @@ import {
 import MainPage from "./components/MainPage";
 import SettingsPage from "./components/SettingsPage";
 import './css/GlobalPage.css'
-import './css/SettingsForm.css'
 
 import {connect} from 'react-redux'
 import Repository from "./backend/Repository";

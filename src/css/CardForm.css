@@ -1,6 +1,7 @@
 .field {
     display: flex;
     flex-direction: column;
+    width: 474px;
 }
 
 .field-label {
@@ -9,4 +10,52 @@
 
 .field input {
     margin-bottom: 18px;
+    padding: 11px 13px 10px 13px;
+
+    border-radius: 4px;
+    border: 2px solid #D9D9D9;
+}
+
+.redStar {
+    color: #FF3333;
+    margin-right: 100px;
+}
+
+.field-text {
+    display: flex;
+}
+
+.field-text .redStar {
+    margin-left: 2px;
+}
+
+.syncInputTime {
+    border-radius: 4px;
+    border: 2px solid #D9D9D9;
+    width: 52px;
+    padding: 11px 0 10px 13px;
+    margin: 0 8px;
+}
+
+.form-buttons {
+    display: flex;
+}
+
+.form-buttons .btn-gold {
+    height: 36px;
+    width: 69px;
+    text-align: center;
+
+    font-size: 13px;
+}
+
+.form-buttons .btn-grey {
+
+    height: 36px;
+    width: 80px;
+    padding: 0 20px;
+    text-align: center;
+    margin-left: 8px;
+
+    font-size: 13px;
 }

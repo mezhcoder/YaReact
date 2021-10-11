@@ -57,7 +57,12 @@ class CardForm extends React.Component {
                 <form onSubmit={this.submitHandler}>
 
                     <div className="field">
-                        <label className="field-label">GitHub repository</label>
+
+                        <div className="field-text">
+                            <label className="field-label">GitHub repository</label>
+                            <span className="redStar">*</span>
+                        </div>
+
                         <input
                             type="text"
                             id="repository"
@@ -68,7 +73,10 @@ class CardForm extends React.Component {
                     </div>
 
                     <div className="field">
-                        <label className="field-label">Build command</label>
+                        <div className="field-text">
+                            <label className="field-label">Build command</label>
+                            <span className="redStar">*</span>
+                        </div>
                         <input
                             type="text"
                             id="command"
@@ -89,21 +97,23 @@ class CardForm extends React.Component {
                             placeholder="enter branch"/>
                     </div>
 
-                    <p>
+                    <p style={{marginTop: -2, marginBottom: 24}}>
                         Synchronize every
                         <input
                             type="text"
                             id="syncTime"
                             name="syncTime"
+                            className="syncInputTime"
                             value={this.state.syncTime}
                             onChange={this.changeInputHandler}
                             placeholder="1"/>
                         minutes
                     </p>
 
-                    <button className="btn btn-success" type="submit">Save</button>
-                    <button className="btn btn-unSuccess" type="submit">Cancel</button>
-
+                    <div className="form-buttons">
+                        <button className="btn btn-gold" type="submit">Save</button>
+                        <button className="btn btn-grey" type="submit">Cancel</button>
+                    </div>
                 </form>
             </>
         )
