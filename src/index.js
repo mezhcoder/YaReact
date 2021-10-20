@@ -6,9 +6,13 @@ import './index.css';
 import App from './App';
 import { store } from './redux/store';
 
+import {HashRouter} from 'react-router-dom';
+
 render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+    <HashRouter basename={process.env.PUBLIC_URL}>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </HashRouter>,
   document.getElementById('root')
 );
