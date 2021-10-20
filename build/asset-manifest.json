@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b433298.chunk.css",
+    "main.js": "/static/js/main.f1b28794.chunk.js",
+    "main.js.map": "/static/js/main.f1b28794.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.224dc4f4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.224dc4f4.js.map",
+    "static/js/2.c7e2fc83.chunk.js": "/static/js/2.c7e2fc83.chunk.js",
+    "static/js/2.c7e2fc83.chunk.js.map": "/static/js/2.c7e2fc83.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7b433298.chunk.css.map": "/static/css/main.7b433298.chunk.css.map",
+    "static/js/2.c7e2fc83.chunk.js.LICENSE.txt": "/static/js/2.c7e2fc83.chunk.js.LICENSE.txt",
+    "static/media/branch.7392a7c9.svg": "/static/media/branch.7392a7c9.svg",
+    "static/media/calendar.79efb4d2.svg": "/static/media/calendar.79efb4d2.svg",
+    "static/media/clock.dc03e2df.svg": "/static/media/clock.dc03e2df.svg",
+    "static/media/done.8eea0803.svg": "/static/media/done.8eea0803.svg",
+    "static/media/fail.674f0041.svg": "/static/media/fail.674f0041.svg",
+    "static/media/settings.1d2790da.svg": "/static/media/settings.1d2790da.svg",
+    "static/media/time.58572d70.svg": "/static/media/time.58572d70.svg",
+    "static/media/tool.ff685a6f.svg": "/static/media/tool.ff685a6f.svg",
+    "static/media/user.73eb91b4.svg": "/static/media/user.73eb91b4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.224dc4f4.js",
+    "static/js/2.c7e2fc83.chunk.js",
+    "static/css/main.7b433298.chunk.css",
+    "static/js/main.f1b28794.chunk.js"
+  ]
+}
