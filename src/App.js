@@ -53,17 +53,3 @@ function isEmptySyncData(syncData) {
 
 
 export default connect(mapStateToProps, null)(App);
-
-// export default App;
-
-
-/*<nav>*/
-/*  <ul>*/
-/*    <li>*/
-/*      <Link to="/">Home</Link>*/
-/*    </li>*/
-/*    <li>*/
-/*      <Link to="/Settings">Build</Link>*/
-/*    </li>*/
-/*  </ul>*/
-/*</nav>*/
